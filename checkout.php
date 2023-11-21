@@ -1,3 +1,4 @@
+
 <?php
 
 include 'components/connect.php';
@@ -58,7 +59,7 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Checkout</title>
+   <title>Pagamento</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -74,7 +75,7 @@ if(isset($_POST['submit'])){
 <!-- fim da section header -->
 
 <div class="heading">
-   <h3>Checkout</h3>
+   <h3>Pagamento</h3>
    <p><a href="home.php">Home</a> <span> / Pagamento</span></p>
 </div>
 
@@ -110,10 +111,11 @@ if(isset($_POST['submit'])){
 
    <input type="hidden" name="total_products" value="<?= $total_products; ?>">
    <input type="hidden" name="total_price" value="<?= $grand_total; ?>" value="">
-   <input type="hidden" name="name" value="<?= $fetch_profile['Nome'] ?>">
-   <input type="hidden" name="number" value="<?= $fetch_profile['Número'] ?>">
-   <input type="hidden" name="email" value="<?= $fetch_profile['E-mail'] ?>">
-   <input type="hidden" name="address" value="<?= $fetch_profile['Endereço'] ?>">
+   <input type="hidden" name="name" value="<?= $fetch_profile['name'] ?>">
+   <input type="hidden" name="number" value="<?= $fetch_profile['number'] ?>">
+   <input type="hidden" name="email" value="<?= $fetch_profile['email'] ?>">
+   <input type="hidden" name="address" value="<?= $fetch_profile['address'] ?>">
+
 
    <div class="user-info">
       <h3>Suas Informações</h3>
@@ -126,12 +128,12 @@ if(isset($_POST['submit'])){
       <a href="update_address.php" class="btn">Alterar endereço</a>
       <select name="method" class="box" required>
          <option value="" disabled selected>Selecione o método de pagamento</option>
-         <option value="cash on delivery">Valor da entrega</option>
-         <option value="credit card">Cartão de crédito</option>
-         <option value="paytm">Paytm</option>
-         <option value="paypal">Paypal</option>
+         <option value="pix">Pix</option>
+         <option value="cartão de debito">Cartão de Débito</option>
+         <option value="cartão de credito">Cartão de Crédito</option>
+         <option value="dinheiro">Dinheiro</option>
       </select>
-      <input type="submit" value="place order" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:var(--red); color:var(--white);" name="submit">
+      <input type="submit" value="Finalizar Pedido" class="btn <?php if($fetch_profile['address'] == ''){echo 'disabled';} ?>" style="width:100%; background:var(--red); color:var(--white);" name="submit">
    </div>
 
 </form>

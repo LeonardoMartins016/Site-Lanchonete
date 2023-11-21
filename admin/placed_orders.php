@@ -66,22 +66,22 @@ if(isset($_GET['delete'])){
       <p> ID do usuário: <span><?= $fetch_orders['user_id']; ?></span> </p>
       <p> Data do pedido: <span><?= $fetch_orders['placed_on']; ?></span> </p>
       <p> Nome: <span><?= $fetch_orders['name']; ?></span> </p>
-      <p> E-mail: <span><?= $fetch_orders['email']; ?></span> </p>
-      <p> Número: <span><?= $fetch_orders['number']; ?></span> </p>
+      <p> E-mail: <span><?= $fetch_orders['email']; ?></span></p>
+      <p> Número: <span><?= $fetch_orders ['number']; ?></span> </p>
       <p> Endereço: <span><?= $fetch_orders['address']; ?></span> </p>
-      <p> Total de produtos: <span><?= $fetch_orders['total_products']; ?></span> </p>
+      <p> Produtos: <span><?= $fetch_orders['total_products']; ?></span> </p>
       <p> Preço total: <span>R$<?= $fetch_orders['total_price']; ?>/-</span> </p>
       <p> Método de pagamento: <span><?= $fetch_orders['method']; ?></span> </p>
       <form action="" method="POST">
          <input type="hidden" name="order_id" value="<?= $fetch_orders['id']; ?>">
          <select name="payment_status" class="drop-down">
-            <option value="" selected disabled><?= $fetch_orders['payment_status']; ?></option>
-            <option value="pending">Pendente</option>
-            <option value="completed">Completo</option>
+            <option value="Status do Pedido" selected disabled>Status do pedido</option>
+            <option value="Em andamento">Pendente</option>
+            <option value="Finalizado">Completo</option>
          </select>
          <div class="flex-btn">
-            <input type="submit" value="update" class="btn" name="update_payment">
-            <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('Deletar esse pedido?');">delete</a>
+            <input type="submit" value="Atualizar" class="btn" name="update_payment">
+            <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('Deletar esse pedido?');">Deletar</a>
          </div>
       </form>
    </div>

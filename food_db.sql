@@ -82,7 +82,7 @@ CREATE TABLE `orders` (
   `id` int(100) NOT NULL,
   `user_id` int(100) NOT NULL,
   `name` varchar(20) NOT NULL,
-  `number` varchar(10) NOT NULL,
+  `number` varchar(15) NOT NULL,
   `email` varchar(50) NOT NULL,
   `method` varchar(50) NOT NULL,
   `address` varchar(500) NOT NULL,

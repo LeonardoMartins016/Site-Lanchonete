@@ -13,13 +13,13 @@ if(isset($_SESSION['user_id'])){
 
 if(isset($_POST['submit'])){
 
-   $address = $_POST['flat'] .', '.$_POST['building'].', '.$_POST['area'].', '.$_POST['town'] .', '. $_POST['city'] .', '. $_POST['state'] .', '. $_POST['country'] .' - '. $_POST['pin_code'];
+   $address = $_POST['rua'] .', '.$_POST['numero_casa'].', '.$_POST['bairro'].', '.$_POST['cidade'] ;
    $address = filter_var($address, FILTER_SANITIZE_STRING);
 
    $update_address = $conn->prepare("UPDATE `users` set address = ? WHERE id = ?");
    $update_address->execute([$address, $user_id]);
 
-   $message[] = 'address saved!';
+   $message[] = 'Endereço salvo!';
 
 }
 
@@ -47,15 +47,13 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>Seu E-mail</h3>
-      <input type="text" class="box" placeholder="CEP" required maxlength="50" name="flat">
-      <input type="text" class="box" placeholder="Número da Casa" required maxlength="50" name="building">
-      <input type="text" class="box" placeholder="Bairro" required maxlength="50" name="area">
-      <input type="text" class="box" placeholder="Cidade" required maxlength="50" name="city">
-      <input type="text" class="box" placeholder="Estado" required maxlength="50" name="state">
-      <input type="text" class="box" placeholder="País" required maxlength="50" name="country">
-      <input type="number" class="box" placeholder="Código pin" required max="999999" min="0" maxlength="6" name="pin_code">
-      <input type="submit" value="save address" name="submit" class="btn">
+      <h3>Novo Endereço</h3>
+      <input type="text" class="box" placeholder="Rua" required maxlength="50" name="rua">
+      <input type="text" class="box" placeholder="Número da Casa" required maxlength="50" name="numero_casa">
+      <input type="text" class="box" placeholder="Bairro" required maxlength="50" name="bairro">
+      <input type="text" class="box" placeholder="Cidade" required maxlength="50" name="cidade">
+
+      <input type="submit" value="Salvar endereço" name="submit" class="btn">
    </form>
 
 </section>
