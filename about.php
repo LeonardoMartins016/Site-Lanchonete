@@ -110,7 +110,7 @@ if(isset($_SESSION['user_id'])){
 
          <div class="swiper-slide slide">
             <img src="images/pic-1.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
+            <p>Rápido, fácil e delicioso! O site é muito bem feito e a entrega foi mais rápida do que esperava. Os hambúrgueres são de primeira, com certeza pedirei mais vezes!</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -118,12 +118,12 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>john deo</h3>
+            <h3>Luigi</h3>
          </div>
 
          <div class="swiper-slide slide">
             <img src="images/pic-2.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
+            <p>Incrível! O Big Byte Burguer mudou minha experiência com delivery. Os hambúrgueres são deliciosos e a personalização no site é super intuitiva. 5 estrelas!</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -131,12 +131,12 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>john deo</h3>
+            <h3>Daniela</h3>
          </div>
 
          <div class="swiper-slide slide">
             <img src="images/pic-3.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
+            <p>Adorei a rapidez e a qualidade! O dashboard interativo fez toda a diferença no acompanhamento do meu pedido. Definitivamente recomendo.</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -144,12 +144,12 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>john deo</h3>
+            <h3>Pedro</h3>
          </div>
 
          <div class="swiper-slide slide">
             <img src="images/pic-4.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
+            <p>Melhor hambúrguer que já pedi online! A possibilidade de customizar meu lanche tornou tudo ainda mais especial. Virei cliente fiel!</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -157,12 +157,12 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>john deo</h3>
+            <h3>Giovana</h3>
          </div>
 
          <div class="swiper-slide slide">
             <img src="images/pic-5.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
+            <p>Excelente serviço e qualidade impecável! O site é fácil de usar e os hambúrgueres chegaram perfeitamente. Parabéns à equipe do BBB!</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -170,12 +170,12 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>john deo</h3>
+            <h3>Gabriel</h3>
          </div>
 
          <div class="swiper-slide slide">
             <img src="images/pic-6.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate eligendi laborum molestias ut earum nulla sint voluptatum labore nemo.</p>
+            <p>Sou vegetariana e fiquei impressionada com as opções. O BBB não só oferece variedade como também garante sabor e qualidade. Amei</p>
             <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -183,7 +183,7 @@ if(isset($_SESSION['user_id'])){
                <i class="fas fa-star"></i>
                <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>john deo</h3>
+            <h3>Júlia</h3>
          </div>
 
       </div>

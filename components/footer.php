@@ -6,12 +6,16 @@
          <img src="images/email-icon.png" alt="">
          <h3>email</h3>
          <a href="mailto:ds.45908023841@gmail.com">bbburguer23@gmail.com</a>
+         <br>
+         <br>
+         <br>
       </div>
 
       <div class="box">
          <img src="images/clock-icon.png" alt="">
          <h3>Horário de funcionamento</h3>
          <p> 17:00 às 00:00</p>
+         <br>
       </div>
 
       <div class="box">
